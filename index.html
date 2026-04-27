@@ -3,26 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kandy - A modern Sri Lankan high-end restaurant serving the heritage of the hill capital in a luxurious setting.">
-    <title>Kandy | Modern Sri Lankan Cuisine</title>
-    <!-- Google Fonts -->
+    
+    <title>Happy Hour Kandy | Best Rice & Curry, Kottu & Fried Rice</title>
+    <meta name="description" content="Visit Happy Hour Kandy at 417 Peradeniya Road! We serve the best local cuisine including Rice & Curry, Kottu, Fried Rice, and Burgers. Open everyday 9:00 AM to 9:00 PM.">
+    <meta name="keywords" content="Happy Hour Kandy, Happy Hour Cafe, Kandy restaurant, Peradeniya Road food, Kottu Kandy, Fried Rice Kandy, fast food Kandy, Sri Lankan restaurant">
+    <meta name="author" content="Happy Hour Kandy">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Happy Hour Kandy | Top Cafe & Restaurant on Peradeniya Road">
+    <meta property="og:description" content="Craving the best food in Kandy? Visit Happy Hour Kandy for authentic Rice & Curry, Kottu, and more. Dine-in or order delivery today!">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://www.yourdomain.com/"> 
+    <meta property="og:site_name" content="Happy Hour Kandy">
+    <meta property="og:locale" content="en_LK">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Main Styles -->
+    
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Happy Hour Kandy",
+      "url": "https://www.yourdomain.com", 
+      "description": "A modern cafe and restaurant in Kandy serving delicious Rice & Curry, Kottu, Fried Rice, and Burgers.",
+      "telephone": ["+94774451516", "+94718866554"],
+      "email": "happyhour2540@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "417, Peradeniya Road",
+        "addressLocality": "Kandy",
+        "addressRegion": "Central Province",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "7.2854571", 
+        "longitude": "80.6256761"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "servesCuisine": ["Sri Lankan", "Asian", "Fast Food"],
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 <body>
 
-    <!-- Navigation -->
     <header class="navbar" id="navbar">
         <div class="nav-container">
-            <h1 class="logo">KANDY</h1>
+            <h1 class="logo" style="font-size: 1.5rem; text-transform: uppercase;">Happy Hour Kandy</h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#menu" class="nav-link">Menu</a></li>
-                    <li><a href="#order" class="nav-link">Order</a></li>
-                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#order" class="nav-link" title="Order Online from Happy Hour Kandy">Order</a></li>
+                    <li><a href="#location" class="nav-link" title="Find Happy Hour Kandy Location">Location</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-btn" id="mobile-menu-btn">
@@ -33,153 +76,120 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2 class="animate-up delay-1">The Essence of the Hill Capital</h2>
-            <p class="animate-up delay-2">Experience the rich culinary heritage of Sri Lanka, elevated to modern perfection.</p>
+            <h2 class="animate-up delay-1">Welcome to <br>Happy Hour Kandy</h2>
+            <p class="animate-up delay-2">Experience the best local flavors on Peradeniya Road, elevated to modern perfection.</p>
             <a href="#menu" class="btn btn-primary animate-up delay-3">View Menu</a>
         </div>
     </section>
 
-    <!-- (Heritage Section Removed) -->
-
-    <!-- Menu Highlights Section -->
     <section class="menu section dark-bg" id="menu">
         <div class="container">
-            <div class="section-header fade-in">
-                <h3 class="section-subtitle">Highlights</h3>
-                <h2 class="section-title">Signatures</h2>
-            </div>
-            
-            <div class="menu-grid">
-                <!-- Dish 1 -->
-                <div class="menu-card fade-in delay-1">
-                    <div class="card-image-wrap">
-                        <img src="assets/images/dish_highlight.png" alt="Modern Sri Lankan Hopper" class="card-image">
-                        <div class="card-overlay">
-                            <span class="price">$34</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h4>Heritage Hopper</h4>
-                        <p>Crispy charcoal-infused appam, fiery seeni sambol, slow-braised black pork curry, micro-cilantro.</p>
-                    </div>
-                </div>
-
-                <!-- Dish 2 -->
-                <div class="menu-card fade-in delay-2">
-                    <div class="card-image-wrap">
-                        <img src="assets/images/craft_cocktail.png" alt="Signature Arrack Cocktail" class="card-image">
-                        <div class="card-overlay">
-                            <span class="price">$22</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h4>The Emerald Isle</h4>
-                        <p>Aged Ceylon Arrack, smoked cinnamon, passionfruit reduction, star anise mist, gold leaf.</p>
-                    </div>
-                </div>
-            </div>
             <div class="full-menu-container fade-in delay-3">
                 
                 <div class="menu-category">
-                    <h3>Starters</h3>
+                    <h3>Rice & Curry</h3>
                     <ul class="menu-list">
                         <li>
-                            <div class="menu-item-header"><span>Mutton Rolls</span><span class="price">$12</span></div>
-                            <p class="menu-desc">Spiced minced mutton, crispy crumbed pastry, tangy tamarind dip.</p>
+                            <div class="menu-item-header"><span>Rice & Curry Vegetable</span><span class="price">RS. 350</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Hot Butter Cuttlefish</span><span class="price">$16</span></div>
-                            <p class="menu-desc">Wok-tossed crispy cuttlefish, spring onions, dried chilies, chili paste.</p>
+                            <div class="menu-item-header"><span>Rice & Curry Egg</span><span class="price">RS. 450</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Isso Vade</span><span class="price">$14</span></div>
-                            <p class="menu-desc">Lentil fritters topped with crispy prawns, served with a lime wedge.</p>
+                            <div class="menu-item-header"><span>Rice & Curry Chicken</span><span class="price">RS. 500</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Devilled Chicken Wings</span><span class="price">$15</span></div>
-                            <p class="menu-desc">Sweet, spicy, and tangy glazed wings with capsicum and onions.</p>
-                        </li>
-                        <li>
-                            <div class="menu-item-header"><span>Jackfruit Cutlets</span><span class="price">$10</span></div>
-                            <p class="menu-desc">Young jackfruit croquettes infused with roasted curry powder.</p>
+                            <div class="menu-item-header"><span>Rice & Curry Fish</span><span class="price">RS. 500</span></div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="menu-category">
-                    <h3>Mains</h3>
+                    <h3>Fried Rice</h3>
                     <ul class="menu-list">
                         <li>
-                            <div class="menu-item-header"><span>Heritage Hopper Set</span><span class="price">$34</span></div>
-                            <p class="menu-desc">Crispy charcoal-infused appam, seeni sambol, slow-braised black pork curry.</p>
+                            <div class="menu-item-header"><span>Chicken Fried Rice</span><span class="price">RS. 1500</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Negombo Crab Curry</span><span class="price">$45</span></div>
-                            <p class="menu-desc">Fresh lagoon crab, rich coconut milk, moringa leaves, roasted spices.</p>
+                            <div class="menu-item-header"><span>Fish Fried Rice</span><span class="price">RS. 1700</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Jaffna Mutton Curry</span><span class="price">$38</span></div>
-                            <p class="menu-desc">Slow-cooked mutton bone-in, robust fennel and dark roasted Jaffna spices.</p>
+                            <div class="menu-item-header"><span>Deviled Chicken Fried Rice</span><span class="price">RS. 1600</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Gourmet Kothu Roti</span><span class="price">$28</span></div>
-                            <p class="menu-desc">Shredded godamba roti chopped with vegetables, egg, and choice of meat.</p>
+                            <div class="menu-item-header"><span>Egg Fried Rice</span><span class="price">RS. 1200</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Dutch Burgher Lamprais</span><span class="price">$30</span></div>
-                            <p class="menu-desc">Mixed meat curry, ash plantain, blachan, frikkadel baked in banana leaf.</p>
+                            <div class="menu-item-header"><span>Seafood Fried Rice</span><span class="price">RS. 1800</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Polos Curry</span><span class="price">$24</span></div>
-                            <p class="menu-desc">Slow-braised young jackfruit in dark roasted coconut gravy. (Vegan)</p>
+                            <div class="menu-item-header"><span>Mixed Fried Rice</span><span class="price">RS. 1800</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Spicy Thai Rice</span><span class="price">RS. 1800</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Choupsey Rice</span><span class="price">RS. 1850</span></div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="menu-category">
-                    <h3>Sides</h3>
+                    <h3>Kottu</h3>
                     <ul class="menu-list">
                         <li>
-                            <div class="menu-item-header"><span>Seeni Sambol</span><span class="price">$6</span></div>
-                            <p class="menu-desc">Sweet and spicy caramelized onion relish.</p>
+                            <div class="menu-item-header"><span>Chicken Kottu</span><span class="price">RS. 1500</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Pol Sambol</span><span class="price">$6</span></div>
-                            <p class="menu-desc">Freshly grated coconut, Maldive fish, red chilies, and lime.</p>
+                            <div class="menu-item-header"><span>Cheese Kottu</span><span class="price">RS. 1600</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Wambatu Moju</span><span class="price">$8</span></div>
-                            <p class="menu-desc">Sweet and sour pickled fried eggplant with mustard and shallots.</p>
+                            <div class="menu-item-header"><span>Mix Kottu</span><span class="price">RS. 1800</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Happy Hour Special Kottu</span><span class="price">RS. 2000</span></div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="menu-category">
-                    <h3>Desserts & Drinks</h3>
+                    <h3>Noodles</h3>
                     <ul class="menu-list">
                         <li>
-                            <div class="menu-item-header"><span>Watalappam</span><span class="price">$12</span></div>
-                            <p class="menu-desc">Traditional spiced coconut custard made with Kithul jaggery and cashews.</p>
+                            <div class="menu-item-header"><span>Chicken Noodles</span><span class="price">RS. 900</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Curd & Treacle</span><span class="price">$10</span></div>
-                            <p class="menu-desc">Creamy buffalo curd drizzled with sweet palm treacle.</p>
+                            <div class="menu-item-header"><span>Egg Noodles</span><span class="price">RS. 700</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>The Emerald Isle</span><span class="price">$22</span></div>
-                            <p class="menu-desc">Aged Ceylon Arrack, smoked cinnamon, passionfruit, star anise mist.</p>
+                            <div class="menu-item-header"><span>Mix Fried Noodles</span><span class="price">RS. 1000</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-category">
+                    <h3>Burgers</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="menu-item-header"><span>Crispy Chicken Burger</span><span class="price">RS. 800</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Ceylon Iced Tea</span><span class="price">$8</span></div>
-                            <p class="menu-desc">Premium black tea infused with lemongrass and wild mint.</p>
+                            <div class="menu-item-header"><span>Spicy Chicken Burger</span><span class="price">RS. 900</span></div>
                         </li>
                         <li>
-                            <div class="menu-item-header"><span>Fresh King Coconut</span><span class="price">$6</span></div>
-                            <p class="menu-desc">Chilled thambili water served straight from the nut.</p>
+                            <div class="menu-item-header"><span>Double Cheese Burger</span><span class="price">RS. 1000</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Double Chicken Burger</span><span class="price">RS. 1000</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Sweet & Sour Chicken</span><span class="price">RS. 1100</span></div>
+                        </li>
+                        <li>
+                            <div class="menu-item-header"><span>Chilli Chicken Burger</span><span class="price">RS. 1100</span></div>
                         </li>
                     </ul>
                 </div>
@@ -187,59 +197,73 @@
         </div>
     </section>
 
-    <!-- Order Online Section -->
     <section class="order section" id="order">
         <div class="container text-center fade-in">
-            <h3 class="section-subtitle">Delivery</h3>
+            <h3 class="section-subtitle">Fast Delivery in Kandy</h3>
             <h2 class="section-title">Order Online</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 3rem;">Enjoy Kandy's signature dishes from the comfort of your home. Available via our delivery partners.</p>
+            <p style="color: var(--text-secondary); margin-bottom: 3rem;">Enjoy Happy Hour's signature dishes from the comfort of your home. Available via our delivery partners.</p>
             <div class="order-buttons">
-                <a href="#" class="platform-btn pickme-btn">
+                <a href="https://pickme-app-sl.onelink.me/Fore?af_xp=custom&pid=custom&deep_link_value=outletDetailScreen&af_dp=afpickmesl%3A%2F%2F&merchant_id=42906&service_code=FOOD&route_type=food_and_market&route=outletDetailScreen" class="platform-btn pickme-btn" title="Order Happy Hour Kandy via PickMe">
                     <span>Order via</span> PickMe
                 </a>
-                <a href="#" class="platform-btn uber-btn">
+                <a href="#" class="platform-btn uber-btn" title="Order Happy Hour Kandy via UberEats">
                     <span>Order via</span> UberEats
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Location Section -->
     <section class="location section" id="location">
-        <div class="container location-container">
-            <div class="location-info fade-in">
+        <div class="container location-container" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: stretch;">
+            <div class="location-info fade-in" style="flex: 1; min-width: 300px;">
                 <h3 class="section-subtitle">Visit Us</h3>
                 <h2 class="section-title">Location & Hours</h2>
-                <p>Join us for an unforgettable culinary journey at the heart of the capital.</p>
+                <p>Join us at Happy Hour Kandy for an unforgettable culinary journey.</p>
                 <div class="contact-details">
                     <div class="detail-item">
-                        <h4>Location</h4>
-                        <p>124 Cinnamon Gardens, Colombo 07</p>
+                        <h4>📍 Location</h4>
+                        <p>417, Peradeniya Road, Kandy</p>
                     </div>
                     <div class="detail-item">
-                        <h4>Hours</h4>
-                        <p>Tuesday - Sunday<br>6:00 PM - 11:30 PM</p>
+                        <h4>🕒 Hours</h4>
+                        <p>Everyday<br>9:00 AM - 9:00 PM</p>
                     </div>
                     <div class="detail-item">
-                        <h4>Contact</h4>
-                        <p>+94 11 234 5678<br>hello@kandyrestaurant.lk</p>
+                        <h4>📞 Contact</h4>
+                        <p>
+                            <a href="tel:+94774451516" style="color: inherit; text-decoration: none;">+94 77 445 1516</a><br>
+                            <a href="tel:+94718866554" style="color: inherit; text-decoration: none;">+94 71 886 6554</a><br>
+                            <a href="mailto:happyhour2540@gmail.com" style="color: inherit; text-decoration: none;">happyhour2540@gmail.com</a>
+                        </p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="location-map fade-in delay-1" style="flex: 1; min-width: 300px; min-height: 350px;">
+                <iframe 
+                    title="Happy Hour Kandy Map Location"
+                    src="https://maps.google.com/maps?q=417%20Peradeniya%20Road,%20Kandy&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <h2>KANDY</h2>
-                <p>&copy; 2026 Kandy Restaurant. All rights reserved.</p>
+                <h2>Happy Hour Kandy</h2>
+                <p>© 2026 Happy Hour Kandy. All rights reserved.</p>
             </div>
             <div class="social-links">
-                <a href="#" aria-label="Instagram">IG</a>
-                <a href="#" aria-label="Facebook">FB</a>
-                <a href="#" aria-label="X">X</a>
+                <a href="#" aria-label="Happy Hour Kandy Instagram">IG</a>
+                <a href="#" aria-label="Happy Hour Kandy Facebook">FB</a>
+                <a href="#" aria-label="Happy Hour Kandy X">X</a>
             </div>
         </div>
     </footer>
