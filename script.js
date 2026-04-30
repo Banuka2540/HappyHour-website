@@ -1,5 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const resetScrollPosition = () => {
+        const root = document.documentElement;
+        const previousScrollBehavior = root.style.scrollBehavior;
+
+        root.style.scrollBehavior = 'auto';
+        window.scrollTo(0, 0);
+        root.scrollTop = 0;
+        document.body.scrollTop = 0;
+        root.style.scrollBehavior = previousScrollBehavior;
+    };
+
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    if (window.location.hash) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    }
+
+    resetScrollPosition();
+
+    window.addEventListener('load', () => {
+        requestAnimationFrame(resetScrollPosition);
+    });
+
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     
