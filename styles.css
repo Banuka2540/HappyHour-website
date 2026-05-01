@@ -522,6 +522,10 @@ ul {
     font-weight: 600;
     transition: var(--transition-smooth);
     min-width: 200px;
+    /* desktop: fixed width so all platform buttons match */
+    width: 320px;
+    box-sizing: border-box;
+    min-height: 120px;
     border: 1px solid rgba(207, 170, 107, 0.18);
     background: rgba(255, 255, 255, 0.02);
     color: var(--text-primary);
@@ -552,15 +556,27 @@ ul {
 }
 
 .uber-btn {
-    background: linear-gradient(135deg, rgba(6, 193, 103, 0.12), rgba(15, 16, 17, 0.96));
-    border-color: rgba(6, 193, 103, 0.34);
+    background: linear-gradient(135deg, rgba(247, 180, 69, 0.14), rgba(15, 16, 17, 0.96));
+    border-color: rgba(247, 180, 69, 0.38);
 }
 
 .uber-btn:hover {
-    background: linear-gradient(135deg, rgba(6, 193, 103, 0.2), rgba(15, 16, 17, 0.98));
+    background: linear-gradient(135deg, rgba(247, 180, 69, 0.22), rgba(15, 16, 17, 0.98));
     transform: translateY(-5px);
-    box-shadow: 0 14px 28px rgba(6, 193, 103, 0.14);
-    border-color: rgba(6, 193, 103, 0.6);
+    box-shadow: 0 14px 28px rgba(247, 180, 69, 0.16);
+    border-color: rgba(247, 180, 69, 0.65);
+}
+
+.custom-order-btn {
+    background: linear-gradient(135deg, rgba(207, 170, 107, 0.18), rgba(15, 16, 17, 0.96));
+    border-color: rgba(207, 170, 107, 0.45);
+}
+
+.custom-order-btn:hover {
+    background: linear-gradient(135deg, rgba(207, 170, 107, 0.26), rgba(15, 16, 17, 0.98));
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(207, 170, 107, 0.14);
+    border-color: rgba(207, 170, 107, 0.7);
 }
 
 
@@ -771,6 +787,7 @@ ul {
         min-width: 0;
         padding: 1.25rem 1.5rem;
         font-size: 1.1rem;
+        min-height: auto; /* let height collapse on small screens */
     }
 
     .contact-details {
