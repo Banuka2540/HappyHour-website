@@ -15,15 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
         history.scrollRestoration = 'manual';
     }
 
-    if (window.location.hash) {
-        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+    const hasValidHashTarget =
+        window.location.hash && document.querySelector(window.location.hash);
+
+    if (!hasValidHashTarget) {
+        resetScrollPosition();
+
+        window.addEventListener('load', () => {
+            requestAnimationFrame(resetScrollPosition);
+        });
     }
-
-    resetScrollPosition();
-
-    window.addEventListener('load', () => {
-        requestAnimationFrame(resetScrollPosition);
-    });
 
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');

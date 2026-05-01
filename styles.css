@@ -53,6 +53,10 @@ ul {
     padding: 0 2rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .section {
     padding: 8rem 0;
 }
@@ -77,6 +81,12 @@ ul {
     font-size: 3rem;
     margin-bottom: 2rem;
     line-height: 1.2;
+}
+
+.section-lead {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.05rem;
 }
 
 .dark-bg {
@@ -157,23 +167,27 @@ ul {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.8rem;
     letter-spacing: 4px;
     color: var(--accent-gold);
 }
 
 .logo-text {
-    display: inline-block;
+    display: none;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 .logo-image {
-    display: none;
-    width: auto;
-    height: 44px;
+    display: block;
+    width: 52px;
+    height: 52px;
     max-width: 180px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .nav-links {
@@ -388,51 +402,22 @@ ul {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-    background: linear-gradient(135deg, rgba(207, 170, 107, 0.14), rgba(15, 16, 17, 0.98)), url('assets/images/dish_highlight.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(207, 170, 107, 0.14), rgba(15, 16, 17, 0.98));
     border: 1px solid rgba(207, 170, 107, 0.18);
 }
 
-.map-card {
+.map-embed {
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.map-card-content {
-    width: min(100%, 320px);
-    padding: 2rem;
-    border-radius: 16px;
-    background: rgba(15, 16, 17, 0.82);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    text-align: center;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-}
-
-.map-pin {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.map-card-content h4 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.map-card-content p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.map-link {
     width: 100%;
-    justify-content: center;
+    height: 100%;
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(0.25) contrast(1.05) saturate(0.92);
 }
 
 .location-info p {
@@ -445,7 +430,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    text-align: center;
+    text-align: left;
     background: rgba(42, 44, 47, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -466,6 +451,15 @@ ul {
     margin-bottom: 0;
     font-size: 0.95rem;
     line-height: 1.8;
+}
+
+.contact-link {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--accent-gold);
 }
 
 /* Full Menu Layout */
@@ -677,7 +671,7 @@ ul {
     }
 
     .logo-image {
-        display: block;
+        height: 44px;
     }
 
     .mobile-menu-btn {
